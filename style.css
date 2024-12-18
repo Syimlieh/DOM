@@ -124,17 +124,31 @@ table #table-body tr:hover {
     gap: .5rem;
 }
 
-table button {
+.edit-btn, .delete-btn {
+    display: flex;
+    justify-content: start;
+    gap: .5rem;
     background-color: #e53e3e;
     color: #fff;
     border: none;
     padding: 5px 10px;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 table button:hover {
     background-color: #c53030;
+    transform: scale(1.05);
+}
+
+.edit-btn {
+    background-color: #007BFF;
+}
+
+.edit-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
 }
 
 @media (max-width: 768px) {

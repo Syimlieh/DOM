@@ -49,8 +49,12 @@ function addNewStudent() {
         <td class="email">${email.value}</td>
         <td class="mobile">${mobileNumber.value}</td>
         <td class="action-col">
-            <button class="edit-btn">Edit</button>
-            <button class="delete-btn">Delete</button>
+            <button class="edit-btn">
+                <i class="fas fa-edit"></i> Edit
+            </button>
+            <button class="delete-btn">
+                <i class="fas fa-trash-alt"></i> Delete
+            </button>
         </td>
     `;
 
@@ -190,8 +194,12 @@ function loanFromLocalStorage() {
                 <td class="email">${item.email}</td>
                 <td class="mobile">${item.mobile}</td>
                 <td class="action-col">
-                    <button class="edit-btn">Edit</button>
-                    <button class="delete-btn">Delete</button>
+                    <button class="edit-btn">
+                        <i class="fas fa-edit"></i> Edit
+                    </button>
+                    <button class="delete-btn">
+                        <i class="fas fa-trash-alt"></i> Delete
+                    </button>
             </td>
         `
         const editBtn = tableRow.querySelector(".edit-btn");
