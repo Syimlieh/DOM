@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Registration System</title>
+        <meta name="description"
+            content="Student Registration System DOM monipulation">
+        <meta name="keywords" content="DOM, Student, Registration">
+        <meta name="author" content="Flemingstar">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <h1 class="main-title">Student Registration System.</h1>
+            <p class="main-para">The Student Registration System is designed to manage student
+                records efficiently which allow student to register their
+                details, including name, class, address, and contact number.</p>
+            <section>
+                <h2>Register new student</h2>
+                <form>
+                    <div class="form-input">
+                        <span class="input-container">
+                            <label for="name">Name: </label>
+                            <input type="text" id="name" placeholder="Name">
+                        </span>
+                        <span class="input-container">
+                            <label for="studentId">Student Id: </label>
+                            <input type="number" id="studentId" placeholder="Student Id">
+                        </span>
+                        <span class="input-container">
+                            <label for="email">Email: </label>
+                            <input type="email" id="email" placeholder="Email">
+                        </span>
+                        <span class="input-container">
+                            <label for="mobile">Contact Number: </label>
+                            <input type="number" id="mobile"
+                                placeholder="Contact number">
+                        </span>
+                    </div>
+                    <button id="submit-btn">Add New Student</button>
+                </form>
+            </section>
+            <section class="student-list">
+                <h2>Registered Students</h2>
+                <div class="table-wrapper">
+                    <table id="student-table" border="1">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Student Id</th>
+                                <th>Email</th>
+                                <th>Contact Number</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+                            <!-- Dynamically added rows will appear here -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+        <script src="./dom.js"></script>
+    </body>
+</html>

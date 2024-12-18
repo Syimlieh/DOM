@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 70%;
+    margin: auto;
+    padding: 3rem 0;
+    font-family: "Lexend", sans-serif;
+    color: #333;
+}
+
+.main-title {
+    font-size: 2rem;
+    text-align: center;
+    color: #5a67d8;
+    margin-bottom: 10px;
+}
+
+.main-para {
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.form-input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 2rem;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    flex: 1 1 48%; 
+}
+
+.input-container label, h2 {
+    font-weight: bold;
+    color: #555;
+    text-align: left;
+}
+
+.input-container input{
+    padding: 0.7rem;
+    font-size: .8rem;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    opacity: .6;
+}
+
+#submit-btn {
+    margin-top: 1rem;
+    padding: .5rem 2rem;
+    background-color: #5a67d8;
+    border-radius: .4rem;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.student-list {
+    margin-top: 2rem;
+}
+
+.table-wrapper {
+    max-height: 400px;
+    overflow-y: auto;
+    margin: 0;
+    margin-top: 2rem;
+}
+
+section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead {
+    background-color: #5a67d8;
+    color: #fff;
+}
+
+#student-table thead th {
+    position: sticky;
+    top: 0; /* Make the header sticky at the top */
+    background-color: #5a67d8;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#table-body {
+    max-height: 100px;
+}
+
+table #table-body tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table #table-body tr:hover {
+    background-color: #f1f1f1;
+}
+
+.action-col {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+table button {
+    background-color: #e53e3e;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+table button:hover {
+    background-color: #c53030;
+}
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 1.6rem;
+    }
+
+    .main-para {
+        font-size: .9rem;
+    }
+
+    #submit-btn {
+        font-size: .8rem;
+    }
+}
